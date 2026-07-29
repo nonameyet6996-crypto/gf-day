@@ -53,7 +53,7 @@ export default function HeroSection({ onOpen }: HeroSectionProps) {
             <button
               onClick={handleOpen}
               aria-label="Tap to open your letter"
-              className="group relative flex h-32 w-44 items-center justify-center sm:h-40 md:h-48 lg:h-56 lg:w-64 xs:h-36 xs:w-48"
+              className="group relative flex h-32 w-44 items-center justify-center sm:h-40 sm:w-48 md:h-48 lg:h-56 lg:w-64"
             >
               {/* Envelope body */}
               <motion.svg
