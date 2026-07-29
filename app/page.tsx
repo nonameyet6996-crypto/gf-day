@@ -36,7 +36,7 @@ export default function Home() {
         {/* Grand finale — heart confetti burst */}
         <ConfettiBurst />
 
-        <footer className="relative z-20 px-4 pb-6 text-center font-body text-xs uppercase tracking-[0.3em] text-rose-400/70 sm:pb-8 md:pb-10">
+        <footer className="relative z-20 pb-10 text-center font-body text-xs uppercase tracking-[0.3em] text-rose-400/70">
           made with a very full heart
         </footer>
       </div>

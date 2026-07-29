@@ -49,18 +49,18 @@ const item = {
 
 export default function GallerySection() {
   return (
-    <section className="relative z-20 mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 sm:py-28 md:py-36">
+    <section className="relative z-20 mx-auto w-full max-w-6xl px-6 py-28 sm:py-36">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
-        className="mb-12 text-center sm:mb-16"
+        className="mb-16 text-center"
       >
         <p className="font-body text-xs uppercase tracking-[0.4em] text-rose-400">
           memory lane
         </p>
-        <h2 className="mt-2 font-display text-2xl font-semibold text-rose-600 sm:text-3xl md:text-4xl lg:text-5xl">
+        <h2 className="mt-3 font-display text-4xl font-semibold text-rose-600 sm:text-5xl">
           A little pile of our favorite moments
         </h2>
       </motion.div>
@@ -70,7 +70,7 @@ export default function GallerySection() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.15 }}
-        className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-14 lg:gap-x-10 lg:gap-y-16"
+        className="grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 sm:gap-x-10 sm:gap-y-16"
       >
         {photos.map((photo) => (
           <motion.figure
@@ -83,8 +83,8 @@ export default function GallerySection() {
               zIndex: 30,
               transition: { type: "spring", stiffness: 200, damping: 15 },
             }}
-            className={`group relative rounded-sm bg-[#fffdf9] p-2 pb-6 shadow-[0_10px_20px_rgba(180,110,130,0.18)] sm:p-3 sm:pb-8 md:p-4 md:pb-10 ${
-              photo.span === "tall" ? "md:mt-10" : ""
+            className={`group relative rounded-sm bg-[#fffdf9] p-3 pb-8 shadow-[0_10px_20px_rgba(180,110,130,0.18)] sm:p-4 sm:pb-10 ${
+              photo.span === "tall" ? "sm:mt-10" : ""
             }`}
           >
             {/* washi tape accent */}
@@ -102,7 +102,7 @@ export default function GallerySection() {
               />
             </div>
 
-            <figcaption className="mt-2 text-center font-script text-base text-rose-500 sm:text-lg md:text-xl">
+            <figcaption className="mt-3 text-center font-script text-lg text-rose-500 sm:text-xl">
               {photo.caption}
             </figcaption>
           </motion.figure>

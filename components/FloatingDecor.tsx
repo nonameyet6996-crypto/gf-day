@@ -30,11 +30,11 @@ interface DecorItem {
 }
 
 const items: DecorItem[] = [
-  { id: 1, type: "star", top: "8%", left: "4%", size: 14, color: "#F5D6A8", duration: 6, delay: 0 },
-  { id: 2, type: "heart", top: "18%", left: "92%", size: 16, color: "#E4A0B0", duration: 7, delay: 0.4 },
-  { id: 3, type: "star", top: "72%", left: "8%", size: 12, color: "#D1C2E8", duration: 5.5, delay: 0.8 },
-  { id: 4, type: "heart", top: "80%", left: "85%", size: 14, color: "#F0BFC9", duration: 6.5, delay: 1.1 },
-  { id: 5, type: "star", top: "40%", left: "96%", size: 10, color: "#F5D6A8", duration: 7.5, delay: 0.2 },
+  { id: 1, type: "star", top: "8%", left: "6%", size: 20, color: "#F5D6A8", duration: 6, delay: 0 },
+  { id: 2, type: "heart", top: "18%", left: "88%", size: 22, color: "#E4A0B0", duration: 7, delay: 0.4 },
+  { id: 3, type: "star", top: "72%", left: "10%", size: 16, color: "#D1C2E8", duration: 5.5, delay: 0.8 },
+  { id: 4, type: "heart", top: "80%", left: "80%", size: 18, color: "#F0BFC9", duration: 6.5, delay: 1.1 },
+  { id: 5, type: "star", top: "40%", left: "94%", size: 14, color: "#F5D6A8", duration: 7.5, delay: 0.2 },
 ];
 
 export default function FloatingDecor() {
