@@ -53,7 +53,7 @@ export default function HeroSection({ onOpen }: HeroSectionProps) {
             <button
               onClick={handleOpen}
               aria-label="Tap to open your letter"
-              className="group relative flex h-40 w-56 items-center justify-center sm:h-48 sm:w-64"
+              className="group relative flex h-32 w-44 items-center justify-center sm:h-40 md:h-48 lg:h-56 lg:w-64 xs:h-36 xs:w-48"
             >
               {/* Envelope body */}
               <motion.svg
@@ -135,7 +135,7 @@ export default function HeroSection({ onOpen }: HeroSectionProps) {
         ) : (
           <motion.div
             key="headline"
-            className="relative z-20 flex flex-col items-center px-6 text-center"
+            className="relative z-20 flex flex-col items-center px-4 text-center sm:px-6 md:px-8"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ...springTransition, delay: 0.1 }}
@@ -145,7 +145,7 @@ export default function HeroSection({ onOpen }: HeroSectionProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...springTransition, delay: 0.25 }}
-              className="font-display text-5xl font-semibold leading-tight text-rose-600 sm:text-7xl"
+              className="font-display text-3xl font-semibold leading-tight text-rose-600 sm:text-5xl md:text-6xl lg:text-7xl"
             >
               Happy Girlfriend&rsquo;s Day
             </motion.h1>
@@ -155,7 +155,7 @@ export default function HeroSection({ onOpen }: HeroSectionProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...springTransition, delay: 0.45 }}
-              className="mt-4 font-script text-3xl text-rose-500 sm:text-4xl"
+              className="mt-4 font-script text-xl text-rose-500 sm:text-2xl md:text-3xl lg:text-4xl"
             >
               to the softest, warmest heart I know
             </motion.p>
