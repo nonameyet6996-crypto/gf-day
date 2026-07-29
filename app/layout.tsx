@@ -26,6 +26,10 @@ const bodyFont = Quicksand({
 export const metadata: Metadata = {
   title: "Happy Girlfriend's Day",
   description: "A little something made just for you.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
