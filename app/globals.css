@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-rose-700 font-body;
+  overflow-x: hidden;
+}
+
+/* Respect reduced-motion preferences across the whole site */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Soft custom scrollbar to match the cozy theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fff6f6;
+}
+::-webkit-scrollbar-thumb {
+  background: #f0bfc9;
+  border-radius: 999px;
+}
+
+/* Polaroid "washi tape" accent used in the gallery — a small
+   torn/semi-transparent strip so the photos feel physically stuck down. */
+.washi-tape {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 64px;
+  height: 22px;
+  background: linear-gradient(
+    120deg,
+    rgba(240, 191, 201, 0.75),
+    rgba(227, 217, 240, 0.75)
+  );
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+}
+
+/* Visible keyboard focus ring, kept soft/on-brand rather than the browser default */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #c9738a;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
