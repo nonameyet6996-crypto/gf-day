@@ -38,7 +38,7 @@ const lineVariant = {
 
 export default function LoveLetterSection() {
   return (
-    <section className="relative z-20 flex w-full items-center justify-center px-6 py-28 sm:py-36">
+    <section className="relative z-20 flex w-full items-center justify-center px-4 py-16 sm:px-6 sm:py-28 md:py-36">
       <FloatingDecor />
 
       <motion.div
@@ -46,9 +46,9 @@ export default function LoveLetterSection() {
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ type: "spring", stiffness: 90, damping: 20 }}
-        className="relative z-20 w-full max-w-2xl rounded-3xl border border-white/40 bg-white/30 p-8 shadow-[0_20px_60px_rgba(201,115,138,0.2)] backdrop-blur-xl sm:p-12"
+        className="relative z-20 w-full max-w-2xl rounded-2xl border border-white/40 bg-white/30 p-4 shadow-[0_20px_60px_rgba(201,115,138,0.2)] backdrop-blur-xl sm:rounded-3xl sm:p-8 md:p-12"
       >
-        <p className="mb-6 text-center font-body text-xs uppercase tracking-[0.4em] text-rose-500/80">
+        <p className="mb-4 text-center font-body text-xs uppercase tracking-[0.4em] text-rose-500/80 sm:mb-6">
           thoda yap
         </p>
 
@@ -57,7 +57,7 @@ export default function LoveLetterSection() {
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.35 }}
-          className="space-y-3 font-script text-2xl leading-relaxed text-rose-700 sm:text-3xl"
+          className="space-y-2 font-script text-base leading-relaxed text-rose-700 sm:space-y-3 sm:text-xl md:text-2xl lg:text-3xl"
         >
           {letterLines.map((line, i) => (
             <motion.p key={i} variants={lineVariant}>
@@ -72,7 +72,7 @@ export default function LoveLetterSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4, type: "spring", stiffness: 100, damping: 20 }}
-          className="mt-8 text-right font-script text-2xl text-rose-600 sm:text-3xl"
+          className="mt-6 text-right font-script text-base text-rose-600 sm:mt-8 sm:text-lg md:text-2xl lg:text-3xl"
         >
           — naam toh suna hi hoga
         </motion.p>
